@@ -11,16 +11,32 @@ import { HttpClientModule } from '@angular/common/http';
 import { FacilityItemComponent } from './facilities/facility-item/facility-item.component';
 import { FormsModule } from '@angular/forms';
 import { NewFacilityItemComponent } from './facilities/facility-item/new-facility-item/new-facility-item.component';
+import { FacilityCategoryComponent } from './facilities/facility-category/facility-category.component';
+import { FacilityGroupComponent } from './facilities/facility-group/facility-group.component';
+import { NewFacilityCategoryComponent } from './facilities/facility-category/new-facility-category/new-facility-category.component';
+import { NewFacilityGroupComponent } from './facilities/facility-group/new-facility-group/new-facility-group.component';
+import { FacilityGroupDetailComponent } from './facilities/facility-group/facility-group-detail/facility-group-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, FacilitiesComponent, FacilityItemComponent, NewFacilityItemComponent],
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    FacilitiesComponent,
+    FacilityItemComponent,
+    NewFacilityItemComponent,
+    FacilityCategoryComponent,
+    FacilityGroupComponent,
+    NewFacilityCategoryComponent,
+    NewFacilityGroupComponent,
+    FacilityGroupDetailComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [MaterialModule],
   bootstrap: [AppComponent],
