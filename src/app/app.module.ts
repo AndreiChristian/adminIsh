@@ -9,14 +9,17 @@ import { MaterialModule } from './material.module';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FacilityItemComponent } from './facilities/facility-item/facility-item.component';
+import { FormsModule } from '@angular/forms';
+import { NewFacilityItemComponent } from './facilities/facility-item/new-facility-item/new-facility-item.component';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, FacilitiesComponent, FacilityItemComponent],
+  declarations: [AppComponent, NavigationComponent, FacilitiesComponent, FacilityItemComponent, NewFacilityItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [MaterialModule],
