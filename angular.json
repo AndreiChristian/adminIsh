@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/purple-green.css",
+
+              "src/customTheme.scss",
               "src/styles.scss"
             ],
             "scripts": []

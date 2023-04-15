@@ -1,0 +1,13 @@
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 2vh;
+  gap: 2vh;
+}
+
+.card{
+  width: 80vw;
+}
