@@ -1,2 +1,6 @@
 <p>facility-group works!</p>
-<router-outlet></router-outlet>
+
+<div *ngFor="let group of facilityGroup$ | async">
+  <h1>{{group.name}}</h1>
+  <h1>{{group.id}}</h1>
+</div>

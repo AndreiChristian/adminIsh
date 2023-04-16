@@ -4,13 +4,15 @@ import { FacilitiesComponent } from './facilities/facilities.component';
 import { FacilityCategoryComponent } from './facilities/facility-category/facility-category.component';
 import { FacilityGroupComponent } from './facilities/facility-group/facility-group.component';
 import { FacilityItemComponent } from './facilities/facility-item/facility-item.component';
+import { FacilityHomeComponent } from './facilities/facility-home/facility-home.component';
 
 const routes: Routes = [
   {
     path: 'facilities',
     component: FacilitiesComponent,
     children: [
-      { path: '', component: FacilityCategoryComponent },
+      { path: '', component: FacilityHomeComponent },
+      { path: 'category', component: FacilityCategoryComponent },
       { path: 'group', component: FacilityGroupComponent },
       { path: 'item', component: FacilityItemComponent },
     ],

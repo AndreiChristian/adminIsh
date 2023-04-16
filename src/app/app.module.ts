@@ -16,6 +16,7 @@ import { FacilityGroupComponent } from './facilities/facility-group/facility-gro
 import { NewFacilityCategoryComponent } from './facilities/facility-category/new-facility-category/new-facility-category.component';
 import { NewFacilityGroupComponent } from './facilities/facility-group/new-facility-group/new-facility-group.component';
 import { FacilityGroupDetailComponent } from './facilities/facility-group/facility-group-detail/facility-group-detail.component';
+import { FacilityHomeComponent } from './facilities/facility-home/facility-home.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FacilityGroupDetailComponent } from './facilities/facility-group/facili
     NewFacilityCategoryComponent,
     NewFacilityGroupComponent,
     FacilityGroupDetailComponent,
+    FacilityHomeComponent,
   ],
   imports: [
     BrowserModule,
