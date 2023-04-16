@@ -9,12 +9,14 @@ import { Observable } from 'rxjs';
 })
 export class FacilityGroupComponent implements OnInit {
   facilityGroup$: Observable<any[]>;
+  facilityCategory: Observable<any[]>;
 
   constructor(private facilityService: FacilityService) {}
 
   ngOnInit(): void {
-    this.facilityService.getFacilities("group")
+    this.facilityService.getFacilities('group');
     this.facilityGroup$ = this.facilityService.facilities$;
-  }
 
+
+  }
 }

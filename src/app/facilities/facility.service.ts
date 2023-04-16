@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class FacilityService {
+
   private facilitySource = new BehaviorSubject<any[]>([]);
   facilities$ = this.facilitySource.asObservable();
 
@@ -31,7 +32,6 @@ export class FacilityService {
         },
         error: () => {
           this._snackBar.open('Error deleting item.', 'OK');
-
         },
       });
   }
